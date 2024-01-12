@@ -46,9 +46,3 @@ def ice_break(name: str, is_twitter: bool = False) -> Tuple[PersonIntel, str]:
         linkedin_information=linkedin_data, twitter_information=twitter_data
     )
     return person_intel_parser.parse(result), linkedin_data.get("profile_pic_url")
-
-
-if __name__ == "__main__":
-    print("Hello LangChain!")
-    information = ice_break(name="Eden Marco Udemy")
-    print(information)
